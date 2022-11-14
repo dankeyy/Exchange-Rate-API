@@ -33,12 +33,15 @@ def low_rates(prod=False) -> Optional[list]:
 
 
 if __name__ == '__main__':
+
     if sys.argv[1] == "prod":
         res = low_rates(prod=True)
-        # print(res)
+        print(res) # might wanna comment it, do something else with res, idk
+
     elif sys.argv[1] == "dev":
         res = low_rates(prod=False)
-        # print(res)
+        print(res) # might wanna comment it, do something else with res, idk
+
     else:
         print("bad argument, specify dev or prod")
         exit(1)
