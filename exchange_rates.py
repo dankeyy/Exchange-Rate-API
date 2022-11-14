@@ -27,7 +27,7 @@ def low_rates(prod=False) -> Optional[list]:
             return filtered(payload)
 
     else:
-        with open("res.json") as f:
+        with open("mock.json") as f:
             payload = json.load(f)
         return filtered(payload)
 
